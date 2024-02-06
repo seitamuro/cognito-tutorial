@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Cognito Tutorial Confirm Registration</title>
+    <script src="js/aws-cognito-sdk.min.js"></script>
+    <script src="js/amazon-cognito-identity.min.js"></script>
+    <script src="js/main.js"></script>
+  </head>
+
+  <body>
+    <h1>Cognito Tutorial 確認コード入力画面</h1>
+    <p>入力したメールアドレスに認証コードを送付しました．</p>
+    <p>メールアドレスと認証コードを入力してください．</p>
+    <span style="display: inline-block; width: 100px">Email</span>
+    <input type="text" id="email" placeholder="メールアドレス" />
+    <br />
+    <span style="display: inline-block; width: 100px">Confirmation Code</span>
+    <input type="text" id="confirmationCode" placeholder="確認コード" />
+    <br />
+    <br />
+    <input type="button" value="確認" onclick="ConfirmRegistration();" />
+  </body>
+</html>
